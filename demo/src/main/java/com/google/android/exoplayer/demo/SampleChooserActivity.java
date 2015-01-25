@@ -56,6 +56,8 @@ public class SampleChooserActivity extends Activity {
     sampleAdapter.addAll((Object[]) Samples.SMOOTHSTREAMING);
     sampleAdapter.add(new Header("Misc"));
     sampleAdapter.addAll((Object[]) Samples.MISC);
+    sampleAdapter.add(new Header("DASH segment templates"));
+    sampleAdapter.addAll((Object[]) Samples.DASH_SEGMENT_TEMPLATE);
     if (DemoUtil.EXPOSE_EXPERIMENTAL_FEATURES) {
       sampleAdapter.add(new Header("YouTube WebM DASH (Experimental)"));
       sampleAdapter.addAll((Object[]) Samples.YOUTUBE_DASH_WEBM);

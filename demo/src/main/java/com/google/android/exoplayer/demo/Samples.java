@@ -134,6 +134,14 @@ package com.google.android.exoplayer.demo;
         DemoUtil.TYPE_OTHER, true),
   };
 
+  public static final Sample[] DASH_SEGMENT_TEMPLATE = new Sample[] {
+    new Sample("Multiple periods 1", "http://dash.edgesuite.net/dash264/TestCases/5a/1/manifest.mpd",
+        "http://dash.edgesuite.net/dash264/TestCases/5a/1/manifest.mpd",
+        DemoUtil.TYPE_DASH, true),
+    new Sample("Multiple periods 2", "http://dash.edgesuite.net/dash264/TestCases/5b/1/manifest.mpd",
+        "http://dash.edgesuite.net/dash264/TestCases/5b/1/manifest.mpd", DemoUtil.TYPE_DASH, true)
+  };
+
   private Samples() {}
 
 }

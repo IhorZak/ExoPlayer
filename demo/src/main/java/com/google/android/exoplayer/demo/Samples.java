@@ -135,6 +135,11 @@ package com.google.android.exoplayer.demo;
   };
 
   public static final Sample[] DASH_SEGMENT_TEMPLATE = new Sample[] {
+    new Sample("Segment template 1", "http://dash.edgesuite.net/dash264/TestCasesMCA/"
+        + "dts/1/Paint_dtsc_testA.mpd",
+        "http://wams.edgesuite.net/media/SintelTrailer_Smooth_from_WAME_720p_Main_Profile/"
+        + "sintel_trailer-720p.ism/manifest(format=mpd-time-csf)",
+        DemoUtil.TYPE_DASH, true),
     new Sample("Multiple periods 1", "http://dash.edgesuite.net/dash264/TestCases/5a/1/manifest.mpd",
         "http://dash.edgesuite.net/dash264/TestCases/5a/1/manifest.mpd",
         DemoUtil.TYPE_DASH, true),

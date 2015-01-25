@@ -114,9 +114,9 @@ import java.util.List;
     ArrayList<Integer> videoRepresentationIndexList = new ArrayList<Integer>();
     for (int i = 0; i < videoRepresentations.size(); i++) {
       Format format = videoRepresentations.get(i).format;
-      if (format.width * format.height > maxDecodableFrameSize) {
-        // Filtering stream that device cannot play
-      } else if (!format.mimeType.equals(MimeTypes.VIDEO_MP4)
+//      if (format.width * format.height > maxDecodableFrameSize) {
+//        // Filtering stream that device cannot play
+      /*} else*/ if (!format.mimeType.equals(MimeTypes.VIDEO_MP4)
           && !format.mimeType.equals(MimeTypes.VIDEO_WEBM)) {
         // Filtering unsupported mime type
       } else {
